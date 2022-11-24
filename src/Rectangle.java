@@ -1,4 +1,4 @@
-public abstract class Rectangle extends Shape {
+public class Rectangle extends Shape {
 
     protected double width;
     protected double lenght;
@@ -32,11 +32,11 @@ public abstract class Rectangle extends Shape {
         this.lenght = lenght;
     }
 
-    public double getArea(double width, double lenght){
+    public double getArea(){
         return this.getWidth() * this.getLenght();
     };
 
-    public double getPerimeter(double width, double lenght){
+    public double getPerimeter(){
         return 2 * (this.getWidth() + this.getLenght()) ;
     };
 

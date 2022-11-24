@@ -1,4 +1,4 @@
-public abstract class Circle extends Shape{
+public class Circle extends Shape{
 
     protected double radius;
     private double pi = 3.14;
@@ -31,11 +31,11 @@ public abstract class Circle extends Shape{
         this.pi = pi;
     }
 
-    public double getArea(double radius, double pi){
+    public double getArea(){
         return this.getPi() * this.getRadius();
     };
 
-    public double getPerimeter(double pi, double radius){
+    public double getPerimeter(){
         return 2 * this.getPi() * this.getRadius() ;
     };
 
