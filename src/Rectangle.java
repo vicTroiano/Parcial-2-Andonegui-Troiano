@@ -32,9 +32,18 @@ public abstract class Rectangle extends Shape {
         this.lenght = lenght;
     }
 
-    public double getArea(double radius, double pi){
-        return this.getPi() * this.getRadius();
+    public double getArea(double width, double lenght){
+        return this.getWidth() * this.getLenght();
     };
 
+    public double getPerimeter(double width, double lenght){
+        return 2 * (this.getWidth() + this.getLenght()) ;
+    };
+
+
+    @Override
+    public String toString() {
+        return "Shape [color=" + filled + lenght + width + "]";
+    }
 
 }
