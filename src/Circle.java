@@ -16,7 +16,7 @@ public abstract class Circle extends Shape{
         this.radius=1.0;
     };
 
-    
+
     public double getRadius() {
         return radius;
     }
