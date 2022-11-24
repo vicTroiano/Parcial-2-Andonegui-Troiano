@@ -1,21 +1,22 @@
 public abstract class Circle extends Shape{
 
     protected double radius;
-    private double pi;
+    private double pi = 3.14;
 
-    public Circle (){
+    public Circle (double radius,String color, boolean filled){
         this.radius=radius;
-        this.pi=pi;
+        this.color=color;
+        this.filled=filled;
     }
+    public Circle (double radius){
+        this.radius=radius;
+    }
+
     public Circle (){
         this.radius=1.0;
     };
 
-    public Circle (double radius,String color, boolean filled){
-    this.radius=radius;
-    this.color=color;
-    this.filled=filled;
-    }
+    
     public double getRadius() {
         return radius;
     }
@@ -34,8 +35,8 @@ public abstract class Circle extends Shape{
         return this.getPi() * this.getRadius();
     };
 
-    public  getPerimeter(){
-        return getPerimeter();
+    public double getPerimeter(double pi, double radius){
+        return 2 * this.getPi() * this.getRadius() ;
     };
 
 
