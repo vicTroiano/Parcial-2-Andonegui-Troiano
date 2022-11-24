@@ -42,7 +42,10 @@ public class Circle extends Shape{
 
     @Override
     public String toString() {
-        return "Circle [color=" + filled + radius + "]";
+        return " Circle[" + "Shape[" + "color= " + color + "," +
+                " filled= " + filled + "]" + "," +
+        " radius = " + radius +
+                "]";
     }
 
 

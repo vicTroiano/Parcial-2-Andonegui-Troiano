@@ -30,8 +30,13 @@ public class Square extends Rectangle {
         this.side = side;
     }
 
+
     @Override
     public String toString() {
-        return "Square [color=" + filled + lenght + width + "]";
+        return " Square[" + "Rectangle[" + "Shape[" + "color= " + color + "," +
+                " filled= " + filled + "]" + "," +
+                " width = " + width + "," +
+                " length = " + lenght +
+                "]" + "]" ;
     }
 }
