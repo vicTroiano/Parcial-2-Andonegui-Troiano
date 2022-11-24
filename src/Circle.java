@@ -1,9 +1,11 @@
-public class Circle extends Shape{
+public abstract class Circle extends Shape{
 
     protected double radius;
+    private double pi;
 
-    public Circle(){
+    public Circle (){
         this.radius=radius;
+        this.pi=pi;
     }
     public Circle (){
         this.radius=1.0;
@@ -20,13 +22,27 @@ public class Circle extends Shape{
     public void setRadius(double radius) {
         this.radius = radius;
     }
+    public double getPi() {
+        return pi;
+    }
 
-    public void getArea(double area);
-    public void getPerimeter(double perimeter);
+    public void setPi(double pi) {
+        this.pi = pi;
+    }
+
+    public double getArea(double radius, double pi){
+        return this.getPi() * this.getRadius();
+    };
+
+    public  getPerimeter(){
+        return getPerimeter();
+    };
 
 
     @Override
     public String toString() {
-        return Circle [ color + filled  + "su radio es" + radius];
+        return "Shape [color=" + filled + radius + "]";
     }
+
+
 }

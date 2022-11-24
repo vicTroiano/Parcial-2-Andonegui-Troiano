@@ -1,3 +1,3 @@
-public class Rectangle extends Shape {
-    
+public abstract class Rectangle extends Shape {
+
 }
