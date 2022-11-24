@@ -1,13 +1,13 @@
 public abstract class Shape {
 
-    private String color;
-    private boolean filled;
+    public String color;
+    public boolean filled;
 
-    Shape () {
+    public Shape () {
         this.color="red";
         this.filled= true;}
 
-    Shape (String color, boolean filled) {
+    public Shape (String color, boolean filled) {
         this.color=color;
         this.filled=filled;}
 
